@@ -4,11 +4,15 @@ namespace CSLInfiniteDemandMod
     {
         public static class DemandRaiseOptions
         {
-            public static int ResidentialZoneLevel = 100;
-            
-            public static int CommercialZoneLevel = 100;
-            
-            public static int IndustrialZoneLevel = 100;
+            private static readonly int[] DemandRaiseLevels = new[] {100, 50, 10, 0};
+
+            public static int ResidentialZoneLevel = 0;
+            public static int CommercialZoneLevel = 0;
+            public static int IndustrialZoneLevel = 0;
+
+            public static int ResidentialZoneRaise => DemandRaiseLevels[ResidentialZoneLevel];
+            public static int CommercialZoneRaise => DemandRaiseLevels[CommercialZoneLevel];
+            public static int IndustrialZoneRaise => DemandRaiseLevels[IndustrialZoneLevel];
         }
     }
 }
