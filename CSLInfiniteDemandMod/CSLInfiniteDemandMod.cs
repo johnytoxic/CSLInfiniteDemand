@@ -11,15 +11,15 @@ namespace CSLInfiniteDemandMod
 
         public void OnSettingsUI(UIHelperBase helper)
         {
-            var demandRaiseOptions = new[] {"High", "Medium", "Low", "None"};
-
             var group = helper.AddGroup("Infinite Demand Adjustments");
-            group.AddDropdown("Residential Zones", demandRaiseOptions,
+            group.AddDropdown("Residential Zones", ModOptions.DemandRaiseOptions.DemandRaiseOptionNames,
                 ModOptions.DemandRaiseOptions.ResidentialZoneLevel,
                 level => { ModOptions.DemandRaiseOptions.ResidentialZoneLevel = level; });
-            group.AddDropdown("Commercial Zones", demandRaiseOptions, ModOptions.DemandRaiseOptions.CommercialZoneLevel,
+            group.AddDropdown("Commercial Zones", ModOptions.DemandRaiseOptions.DemandRaiseOptionNames,
+                ModOptions.DemandRaiseOptions.CommercialZoneLevel,
                 level => { ModOptions.DemandRaiseOptions.CommercialZoneLevel = level; });
-            group.AddDropdown("Industrial Zones", demandRaiseOptions, ModOptions.DemandRaiseOptions.IndustrialZoneLevel,
+            group.AddDropdown("Industrial Zones", ModOptions.DemandRaiseOptions.DemandRaiseOptionNames,
+                ModOptions.DemandRaiseOptions.IndustrialZoneLevel,
                 level => { ModOptions.DemandRaiseOptions.IndustrialZoneLevel = level; });
         }
     }
