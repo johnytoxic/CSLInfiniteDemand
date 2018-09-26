@@ -54,8 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSLInfiniteDemandMod.cs" />
+    <Compile Include="DemandSettings.cs" />
     <Compile Include="InfiniteDemandExtension.cs" />
-    <Compile Include="ModOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

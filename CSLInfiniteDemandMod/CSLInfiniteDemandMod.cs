@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using ICities;
 using UnityEngine;
 
@@ -12,15 +14,12 @@ namespace CSLInfiniteDemandMod
         public void OnSettingsUI(UIHelperBase helper)
         {
             var group = helper.AddGroup("Infinite Demand Adjustments");
-            group.AddDropdown("Residential Zones", ModOptions.DemandRaiseOptions.DemandRaiseOptionNames,
-                ModOptions.DemandRaiseOptions.ResidentialZoneLevel,
-                level => { ModOptions.DemandRaiseOptions.ResidentialZoneLevel = level; });
-            group.AddDropdown("Commercial Zones", ModOptions.DemandRaiseOptions.DemandRaiseOptionNames,
-                ModOptions.DemandRaiseOptions.CommercialZoneLevel,
-                level => { ModOptions.DemandRaiseOptions.CommercialZoneLevel = level; });
-            group.AddDropdown("Industrial Zones", ModOptions.DemandRaiseOptions.DemandRaiseOptionNames,
-                ModOptions.DemandRaiseOptions.IndustrialZoneLevel,
-                level => { ModOptions.DemandRaiseOptions.IndustrialZoneLevel = level; });
+            group.AddDropdown("Residential Zones", DemandSettings.DemandRaiseOptionNames,
+                DemandSettings.ResidentialRaiseOption, option => DemandSettings.ResidentialRaiseOption = option);
+            group.AddDropdown("Commercial Zones", DemandSettings.DemandRaiseOptionNames,
+                DemandSettings.CommercialRaiseOption, option => DemandSettings.CommercialRaiseOption = option);
+            group.AddDropdown("Industrial Zones", DemandSettings.DemandRaiseOptionNames,
+                DemandSettings.IndustrialRaiseOption, option => DemandSettings.IndustrialRaiseOption = option);
         }
     }
 }

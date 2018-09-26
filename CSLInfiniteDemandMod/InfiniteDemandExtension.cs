@@ -6,17 +6,17 @@ namespace CSLInfiniteDemandMod
     {
         public override int OnCalculateResidentialDemand(int originalDemand)
         {
-            return ModOptions.DemandRaiseOptions.ResidentialZoneRaise;
+            return DemandSettings.ResidentialZoneRaise;
         }
 
         public override int OnCalculateCommercialDemand(int originalDemand)
         {
-            return ModOptions.DemandRaiseOptions.CommercialZoneRaise;
+            return DemandSettings.CommercialZoneRaise;
         }
 
         public override int OnCalculateWorkplaceDemand(int originalDemand)
         {
-            return ModOptions.DemandRaiseOptions.IndustrialZoneRaise;
+            return DemandSettings.IndustrialZoneRaise;
         }
     }
 }
