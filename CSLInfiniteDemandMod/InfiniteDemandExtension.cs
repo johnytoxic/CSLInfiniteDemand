@@ -4,19 +4,11 @@ namespace CSLInfiniteDemandMod
 {
     public class InfiniteDemandExtension : DemandExtensionBase
     {
-        public override int OnCalculateResidentialDemand(int originalDemand)
-        {
-            return DemandSettings.ResidentialZoneRaise;
-        }
+        private const int DemandRaiseLevel = 100;
 
-        public override int OnCalculateCommercialDemand(int originalDemand)
+        public override int OnUpdateDemand(int lastDemand, int nextDemand, int targetDemand)
         {
-            return DemandSettings.CommercialZoneRaise;
-        }
-
-        public override int OnCalculateWorkplaceDemand(int originalDemand)
-        {
-            return DemandSettings.IndustrialZoneRaise;
+            return DemandRaiseLevel;
         }
     }
 }
