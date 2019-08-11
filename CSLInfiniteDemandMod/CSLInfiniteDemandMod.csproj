@@ -33,23 +33,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\..\..\Volumes\Hyper Space\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\Vendor\Cities_Skylines\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\..\..\Volumes\Hyper Space\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\ColossalManaged.dll</HintPath>
+      <HintPath>..\Vendor\Cities_Skylines\ColossalManaged.dll</HintPath>
     </Reference>
     <Reference Include="ICities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\..\..\Volumes\Hyper Space\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\ICities.dll</HintPath>
+      <HintPath>..\Vendor\Cities_Skylines\ICities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\..\..\Volumes\Hyper Space\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\Vendor\Cities_Skylines\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\..\..\Volumes\Hyper Space\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\Vendor\Cities_Skylines\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
