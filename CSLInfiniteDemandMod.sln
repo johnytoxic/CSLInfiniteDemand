@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSLInfiniteDemandMod", "CSLInfiniteDemandMod\CSLInfiniteDemandMod.csproj", "{B13DCAB2-F0B0-4FFA-B226-13084C75525B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniteDemand", "InfiniteDemand\InfiniteDemand.csproj", "{B13DCAB2-F0B0-4FFA-B226-13084C75525B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

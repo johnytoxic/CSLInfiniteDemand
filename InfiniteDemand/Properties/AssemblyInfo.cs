@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CSLInfiniteDemandMod")]
+[assembly: AssemblyTitle("InfiniteDemand")]
 [assembly: AssemblyDescription("A Cities Skylines Mod for Infinite Demand.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CSLInfiniteDemandMod")]
+[assembly: AssemblyProduct("InfiniteDemand")]
 [assembly: AssemblyCopyright("Copyright © johnytoxic 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -31,7 +31,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
 // Force every build to issue a new file version.
 // This will automatically reload the mod in the game when built.
 // @see http://skylines.paradoxwikis.com/Advanced_Mod_Setup#Automatic_reloading
