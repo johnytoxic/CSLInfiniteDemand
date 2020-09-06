@@ -7,6 +7,6 @@ namespace CSLInfiniteDemandMod
         // Extracted from Settings class
         private static readonly string gameSettingsFile = "gameSettings";
 
-        public static SavedBool Enabled = new SavedBool("InfiniteDemandMod.Enable", gameSettingsFile, true);
+        public static SubscribableSavedBool Enabled = new SubscribableSavedBool("InfiniteDemandMod.Enable", gameSettingsFile, true);
     }
 }
